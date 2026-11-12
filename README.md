@@ -307,7 +307,7 @@ Some fields appear only on some pages:
 
 Each post has an `id`, which is `POLARIS_` followed by Instagram's media ID, e.g., `POLARIS_2918332871356056719`, a `shortcode`, e.g., `CiAAEjVhgSP`, and a `link` to the post, e.g., `https://www.instagram.com/reel/CiAAEjVhgSP` for a post by ayanaresort. All posts seen live are reels, even for keywords such as `landscape photography`, `quotes`, or `infographic`, so each post in `popular_results` has a `play_count` and a link to the video file. The response has no like or comment counts and no post dates.
 
-The image and video links on Instagram's CDN are signed and expire: the images after about 4 days, and the videos after 1 to 4 days. The `serpapi_` links load the same images through SerpApi, but they don't last forever either, so save the images and videos you need.
+The image and video links on Instagram's CDN are signed and expire: the images after about 4 days, and the videos after 1 to 4 days. The `serpapi_` links load the same images through SerpApi, but they don't last forever either, so search again for fresh links.
 
 To get the next page, pass `serpapi_pagination.next_page_token` as `next_page_token` with the same `keyword`, or follow `serpapi_pagination.next`. To search a related or popular keyword, follow its `serpapi_instagram_popular_link`. To get the profile of the account behind a post with the [Instagram Profile API](https://serpapi.com/instagram-profile-api?utm_source=github_instagram_popular_scraper), follow `user.serpapi_instagram_profile_link`.
 
